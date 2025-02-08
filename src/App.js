@@ -82,7 +82,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <img className="logo" src="./cs378-p2/images/logo.png" alt="Campus Cafe Logo" />
+        <img className="logo" src="/cs378-p2/images/logo.png" alt="Campus Cafe Logo" />
         <p className="menu-cursive">
           <em>Delicious, From-Scratch Recipes Close at Hand</em>
         </p>

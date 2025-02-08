@@ -5,8 +5,6 @@ import '../App.css'
 // Use bootstrap to style the elements so that it looks like the mockup in the assignment.
 // Hint: You can use the image name to get the image from the images folder.
 const MenuItem = ({ id, title, description, imageName, price}) => {
-    console.log('/images/'+{imageName})
-    console.log()
     return (
         
         <div className="menu-item">
