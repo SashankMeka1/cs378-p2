@@ -80,17 +80,19 @@ const menuItems = [
 
 function App() {
   return (
-    <div class = "menu">
-      <h1>Menu</h1>
+    <div className="app">
+      <header className="header">
+        <img className="logo" src="/images/logo.png" alt="Campus Cafe Logo" />
+        <p className="menu-cursive">
+          <em>Delicious, From-Scratch Recipes Close at Hand</em>
+        </p>
+        <h1 className="menu-title">The Fresh Choice of UT!</h1>
+      </header>
+
       <div className="menu">
-        {/* Display menu items dynamicaly here by iterating over the provided menuItems */}
-        {
-          menuItems.map(item => {
-            console.log(item);
-            return <MenuItem {...item} />;
-          })
-        }
-         {/* Example for how to use a component */}
+        {menuItems.map((item, index) => (
+          <MenuItem key={index} {...item} />
+        ))}
       </div>
     </div>
   );

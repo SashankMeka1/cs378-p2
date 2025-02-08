@@ -6,17 +6,19 @@ import '../App.css'
 // Hint: You can use the image name to get the image from the images folder.
 const MenuItem = ({ id, title, description, imageName, price}) => {
     console.log('/images/'+{imageName})
+    console.log()
     return (
-        <div>
-            <img class = "menu-item-img" src={'/images/'+imageName} alt={title} />
-            <div class="menu-item">
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <span class="price">{price}</span>
-                <button class="button">Add</button>
+        <div className="menu-item">
+            <img className="menu-item-image" src={'/images/'+imageName} alt={title} />
+            <div className="menu-item-info">
+                <h3 className="title">{title}</h3>
+                <p className="description">{description}</p>
+                <div className="button-separator">
+                    <span className="price">${price.toFixed(2)}</span>
+                    <button className="add-button">Add</button>
+                </div>
             </div>
         </div>
-
     );
 };
 

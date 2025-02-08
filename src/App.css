@@ -1,108 +1,85 @@
-/* styles.css */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
-}
-.total {
-  flex-direction:row;
-}
-.container {
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.logo {
-  display: block;
-  max-width: 200px;
-  margin: auto; 
-}
-
-.description {
-  font-size: 32px;
-  font-family: 'Western', sans-serif;
-  color: #aa7d6f;
-  margin-bottom: 10px;
-}
-
-
-.title {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 32px; /* Increased vertical spacing between items */
+  padding: 20px 0;
+  width: 100%;
 }
-
+.logo {
+  width: 240px; /* Reduce size (Adjust as needed) */
+  height: auto;
+  margin-bottom: 8px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Ensure proper centering */
+  text-align: center;
+  margin-bottom: 24px;
+}
 .menu-item {
   display: flex;
   align-items: center;
-  background-color: #f8be94; 
-  padding: 15px;
-  border-radius: 12px;
+  gap: 16px;
+  padding: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+  width: 100%; /* Full width to blend with background */
+  max-width: 500px; /* Slightly wider for better spacing */
 }
 
-.menu-item-img {
+.menu-cursive {
+  font-size: 1.2rem;
+  color: #b5764a;
+  font-family: "Dancing Script", cursive; /* Beautiful cursive font */
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.menu-item-image {
   width: 80px;
   height: 80px;
   object-fit: cover;
   border-radius: 8px;
-  margin-right: 15px; /* Space between image and details */
 }
 
-.menu-details {
-  flex: 1; /* Take up remaining space */
+.menu-item-info {
+  flex: 1;
 }
 
-.menu-details h3 {
-  margin: 0;
-  font-size: 18px;
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.button-separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1rem;
   font-weight: bold;
   color: #333;
 }
 
-.menu-details p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #555;
+.add-button {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.menu-details .price {
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-}
-
-button {
-  padding: 8px 8px;
-  background-color: #ff6b35;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-}
-
-button:hover {
-  background-color: #442014;
-}
-
-.menu {
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.menu-item {
-  flex: 50%;
-}
