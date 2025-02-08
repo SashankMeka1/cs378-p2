@@ -1,8 +1,108 @@
-/* 
-  Style your elements by creating CSS classes here.
-  Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
-*/
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+.total {
+  flex-direction:row;
+}
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: block;
+  max-width: 200px;
+  margin: auto; 
+}
+
+.description {
+  font-size: 32px;
+  font-family: 'Western', sans-serif;
+  color: #aa7d6f;
+  margin-bottom: 10px;
+}
+
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
 
 .menu {
-  color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  background-color: #f8be94; 
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.menu-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px; /* Space between image and details */
+}
+
+.menu-details {
+  flex: 1; /* Take up remaining space */
+}
+
+.menu-details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.menu-details .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+button {
+  padding: 8px 8px;
+  background-color: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: #442014;
+}
+
+.menu {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item {
+  flex: 50%;
 }
