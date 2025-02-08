@@ -8,8 +8,9 @@ const MenuItem = ({ id, title, description, imageName, price}) => {
     console.log('/images/'+{imageName})
     console.log()
     return (
+        
         <div className="menu-item">
-            <img className="menu-item-image" src={'/images/'+imageName} alt={title} />
+            <img className="menu-item-image" src={'/cs378-p2/images/'+imageName} alt={title} />
             <div className="menu-item-info">
                 <h3 className="title">{title}</h3>
                 <p className="description">{description}</p>
